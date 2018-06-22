@@ -48,16 +48,9 @@
 				<executions>
 					<execution>
 						<id>wildfly-deploy</id>
-						<phase>pre-integration-test</phase>
+						<phase>deploy</phase>
 						<goals>
 							<goal>deploy</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>wildfly-undeploy</id>
-						<phase>post-integration-test</phase>
-						<goals>
-							<goal>undeploy</goal>
 						</goals>
 					</execution>
 				</executions>
